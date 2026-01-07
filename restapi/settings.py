@@ -135,6 +135,14 @@ REST_FRAMEWORK = {
     )
 }
 
+STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / "staticfiles"
+
+# Optional, if you have extra static folders
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+
 
 
 # Static files (CSS, JavaScript, Images)
