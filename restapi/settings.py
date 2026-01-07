@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'django_rest_passwordreset',
     'smtp_email',
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
@@ -94,6 +95,7 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
 
 
 # Password validation
