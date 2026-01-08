@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure--mgy44+p!e8ank-0cl@c0oc$=w!k9rr)r&1#bl0jmh#k&4k2jg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["18.170.44.98",]
+# ALLOWED_HOSTS = ["18.170.44.98",]
+ALLOWED_HOSTS = ['18.170.44.98', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -44,9 +45,13 @@ INSTALLED_APPS = [
     'django_rest_passwordreset',
     'smtp_email',
     'drf_yasg',
+    'corsheaders',
+
 ]
+CORS_ALLOW_ALL_ORIGINS = True
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
