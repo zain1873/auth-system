@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     'django_rest_passwordreset',
     'smtp_email',
     'drf_yasg',
-    'bookings',
+
 ]
 CORS_ALLOW_ALL_ORIGINS = True
 
