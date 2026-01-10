@@ -3,6 +3,7 @@ from django.contrib import admin
 from django.contrib.auth.models import User
 
 from bookings.models import TableBooking
+from contact.models import Contact
 
 
 
@@ -14,5 +15,8 @@ class CustomUserAdmin(admin.ModelAdmin):
 
 
 
-# booking app model
+#coffee booking app model
 admin.site.register(TableBooking)
+
+# coffee contact app model
+admin.site.register(Contact)

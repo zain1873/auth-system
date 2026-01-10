@@ -19,7 +19,8 @@ schema_view = get_schema_view(
 )
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('bookings.urls')),
+    path('api/', include('bookings.urls')),
+    path('api/', include('contact.urls')),
 
     # App URLs
     path('api/login/', include('loginapi.urls')),
